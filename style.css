@@ -1,0 +1,823 @@
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   background: ghostwhite;
+}
+
+nav{
+    display: flex;
+}
+.nav-parent{
+    display: flex;
+    gap: 300px;
+    justify-content: center;
+    align-items: center;
+   
+}
+nav ul li{
+    display: inline;
+    font-size: 18px;
+    padding: 23px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li:hover{
+    color: rgb(53, 94, 149);
+}
+ .sign{
+    /* float: right; */
+    background-color: rgb(53, 94, 149);
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 40px;
+    /* margin-top: 10px; */
+    position: relative;
+    right: 3.5rem;
+    
+}
+.sign span{
+    font-size: 18px;
+    color: white;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sign:hover{
+    transform: scale(1.05);
+    background-color: rgb(31, 60, 98);
+    cursor: pointer;
+   
+}
+label{
+    font-size: 30px;
+    position: relative;
+    left: 120px;
+    line-height: 55px;
+    
+   
+}
+label span{
+    color: rgb(53, 94, 149);
+}
+.headinfo{
+    background: lavender;
+    font-size: 2.3em;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    background-image: url(./main.png);
+    background-repeat: no-repeat;
+    background-position:  top right ;
+    /* align-items: center; */
+    height: 80vh;
+    background-position: calc(15em);
+    gap: 6em;
+    
+}
+header h2{
+    width: 50%;
+    /* margin-right: 3em; */
+    margin-top: 3em;
+    line-height: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-weight: lighter; */
+}
+header span{
+    color:rgb(53, 94, 149);
+}
+
+header img{
+    margin-right: 60px;
+    margin-top: 40px;
+}
+.parent-longdiv{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.longdiv{
+    width: 70rem;
+    height: 75px;
+    background-color: white;
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    box-sizing: border-box;
+    line-height: 70px;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+.location, .property, .max-price{
+    line-height: 40px;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.location p:nth-child(1), .property p:nth-child(1), .max-price p:nth-child(1) {
+    color: rgb(53, 94, 149);
+   
+}
+.bi-chevron-down{
+    border-right: 1px solid rgb(35, 35, 35);
+    padding-right: 2.5rem;
+    
+}
+.search-button{
+    width: 7rem;
+    height: 3rem;
+    background-color: rgb(53, 94, 149);
+    border: none;
+    border-radius: 40px;
+    color: white
+}
+.search-button:hover{
+    background-color: white;
+    color: rgb(53, 94, 149);
+    border: 2px solid rgb(53, 94, 149);
+}
+.longdiv .search-button{
+    font-size: 1rem;
+}
+.section1{
+    text-align: center;
+    margin-top: 80px;
+}
+.section1 p:nth-child(1){
+    color: rgb(53, 94, 149);
+    text-transform: capitalize;
+}
+.section1 h3{
+    font-size: 25px;
+}
+.whatwedo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+.buy-a-home, .rent-a-home, .sell-a-home{
+    width: 230px;
+    height: 280px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+.buy-a-home svg, .rent-a-home svg, .sell-a-home svg{
+    border: 2px solid rgb(53, 94, 149);
+    padding: 15px;
+    border-radius: 10px;
+    fill: rgb(53, 94, 149);
+   
+}
+
+
+.buy-a-home p:nth-child(2), .rent-a-home p:nth-child(2), .sell-a-home p:nth-child(2){
+    font-size: 18px;
+}
+.buy-a-home .more-button, .rent-a-home .more-button, .sell-a-home .more-button{
+    width: 105px;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid rgb(53, 94, 149);
+    border-radius: 40px;
+    color: rgb(53, 94, 149);
+    font-size: 15px;
+}
+
+.buy-a-home .more-button:hover, .rent-a-home .more-button:hover, .sell-a-home .more-button:hover{
+    background-color: rgb(53, 94, 149);
+    color: white;
+    transition: all .5s;
+    cursor: pointer;
+}
+/* .parent-properties{
+    display: flex;
+} */
+.parent-properties{
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.properties-seeall-button{
+   width: 105px;
+   height: 40px;
+   border:2px solid rgb(53, 94, 149);
+   border-radius: 40px;
+   background: white;
+   color: rgb(53, 94, 149);
+   font-size: 15px;
+}
+
+.properties{
+    margin-top: 200px;
+}
+.properties h3{
+    font-size: 35px;
+}
+.properties h5{
+    color: rgb(53, 94, 149);
+    font-size: 15px;
+}
+.properties h3, .properties h5{
+    text-align: center;
+}
+.parent-properties img{
+    border-radius: 40px 40px 0 0;
+}
+.parent-properties figcaption{
+    width: 350px;
+    background-color: white;
+    border-radius: 0 0 40px 40px;
+    position: relative;
+    bottom: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+.parent-properties figcaption .owner img{
+    margin-right: 76px;
+}
+.parent-properties figcaption .owner span{
+    position: relative;
+    right: 5.5rem;
+}
+.parent-properties figcaption:first-of-type{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.buy-a-home:hover,.rent-a-home:hover, .sell-a-home:hover {
+   transform: scale(1.07);
+   box-shadow: 5px 8px 8px -7px black;
+   transition: all .3s;
+}
+
+.name-price{
+    display: flex;
+    gap: 120px;
+}
+.name-price div:nth-child(1){
+    position: relative;
+    left: 20px;
+}
+.name-price div:nth-child(2){
+    color: rgb(53, 94, 149);
+}
+.property-location{
+    display: flex;
+    gap: 8px;
+    position: relative;
+    left: 18px;
+}
+.property-location svg{
+    color: rgb(53, 94, 149);
+    
+}
+.icons3{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.icons3 svg{
+    fill: rgb(53, 94, 149);
+    /* background-color: rgb(53, 94, 149); */
+    padding: 5px;
+}
+.owner{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.owner img{
+    border-radius: 50px;
+    position: relative;
+    left: 20px;
+}
+.owner svg{
+    position: relative;
+    right: 50px;
+}
+.bi-heart-fill{
+    fill: rgb(174, 174, 174);
+}
+
+.properties-seeall{
+  margin-left: 670px;
+  margin-top: 60px;
+}
+.properties-seeall-button:hover{
+    background-color: rgb(53, 94, 149);
+    color: white;
+    cursor: pointer;
+  
+}
+
+.featured-properties{
+    margin-top: 250px;
+    
+}
+.featured-properties h5{
+    color: rgb(53, 94, 149);
+    font-size: 20px;
+    text-align: center;
+}
+.featured-properties h3{
+    font-size: 30px;
+    text-align: center;
+}
+.featured-properties-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.featured1{
+    width: 300px;
+    height: 415px;
+    background-color: white;
+    border-radius: 40px 0 0 40px;
+    /* box-shadow: 0px 8px 8px -7px black; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+ .long-img{
+    border-radius: 0px 40px 40px 0px;
+    
+}
+.featured1 h4{
+    color: rgb(53, 94, 149);
+    font-size: 20px;
+    margin-left: 30px;
+}
+.featured1 h2{
+   margin-left: 30px;
+}
+.featured1 svg{
+    margin-left: 30px;
+}
+.featured-3icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.featured-3icons svg{
+    fill: rgb(53, 94, 149);
+}
+.featured-owner{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+}
+.featured-owner img{
+    border-radius: 50px;
+    margin-left: 10px;
+}
+.featured-properties-seeall{
+    text-align: center;
+    margin-top: 60px;
+}
+.properties-seeall-button{
+    background-color:rgb(234, 234, 235) ;
+}
+
+.blog{
+    margin-top: 350px;
+}
+.blog h5{
+    color: rgb(53, 94, 149);
+    text-align: center;
+}
+.blog h3{
+    font-size: 30px;
+    text-align: center;
+}
+.bi-heart-fill:hover{
+    fill: crimson;
+    cursor: pointer;
+    
+}
+.parent-blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+.parent-blog img{
+    border-radius: 40px 40px 0 0;
+}
+.parent-blog figcaption{
+    background-color: white;
+    height: 255px;
+    position: relative;
+    bottom: 30px;
+    border-radius: 0 0 40px 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+ 
+}
+.parent-blog h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    position: relative;
+    top: 10px;
+}
+.parent-blog figcaption p, .parent-blog figcaption h4{
+    margin-left: 30px;
+}
+.parent-blog figcaption p:nth-child(3){
+    width: 300px;
+    color: rgb(53, 53, 53);
+    font-size: 16px;
+}
+.readmore{
+    display: flex;
+    gap: 130px;
+    position: relative;
+    bottom: 15px;
+    color: rgb(53, 94, 149);
+}
+.readmore svg:hover{
+    background-color: rgb(53, 94, 149);
+    color: white;
+    border-radius: 50px;
+}
+.testimonials{
+    margin-top: 7rem;
+    /* margin-bottom: 4rem; */
+    padding: 3rem;
+}
+.parent-testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;    gap: 2rem;
+}
+.testimonials h5{
+    color: rgb(53, 94, 149);
+    font-size: 1rem;
+    text-align: center;
+}
+.testimonials h3{
+    font-size: 1.7rem;
+    text-align: center;
+}
+.testimonal-1{
+    width: 21rem;
+    height: 20rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: white;
+    line-height: 1.1rem;
+    border-radius: 1rem;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.testimonal-1 p{
+    
+}
+.testimonal-1 span{
+   position: relative;
+   bottom: 0.8rem;
+}
+
+.testimonal-1 img{
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+footer{
+    background-color: rgb(242, 242, 242);
+    text-transform: capitalize;
+    padding: 2rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    
+}
+.parent-footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo p{
+    width: 18rem;
+   color: rgb(108, 108, 108);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer ul li{
+    list-style: none;
+    line-height: 2rem;
+    margin-right: 5rem;
+    color: rgb(108, 108, 108);
+}
+footer ul li:hover{
+    color: black;
+    padding-left: 0.1rem;
+}
+footer .contact{
+    margin-bottom: 2rem;
+}
+footer .socials{
+    margin-bottom: 7.5rem;
+   
+}
+footer .socials a{
+    text-decoration: none;
+    color: rgb(53, 94, 149);
+    padding: 0.2rem;
+   
+}
+.bi-twitter:hover, .bi-instagram:hover, .bi-youtube:hover, .bi-facebook:hover{
+    fill: black;
+}
+.contact{
+    position: relative;
+    left: 2rem;
+}
+.contact h3{
+    position: relative;
+    left: 2.5rem;
+}
+.services{
+   position: relative;
+   left: 6rem;
+}
+.services h3{
+    position: relative;
+    left: 2.5rem;
+}
+.quick-links{
+    position: relative;
+   left: 6rem;
+}
+.quick-links h3{
+    position: relative;
+    left: 2.4rem;
+}
+.footer-logo label{
+    position: relative;
+    left: 0.1rem;
+    font-size: 2.4rem;
+}
+.footer-logo {
+    position: relative;
+    left: 2rem;
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+    nav{
+        height: 50px;
+
+    }
+    
+
+    nav label{
+       position: relative;
+       /* left: 100px; */
+       font-weight: 500;
+    }
+    nav .sign{
+       width: 60px;
+      
+    }
+    .headinfo{
+        display: flex;
+        /* flex-direction: column; */
+        /* background: red; */
+        /* width: 50%; */
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .headinfo img{
+        width: 14em;
+        position: relative;
+        top: 1em;
+        /* left: 20px; */
+        right: 1em;
+      
+
+    }
+    header h2{
+        width: 90%;
+        font-size: 1.1rem;
+        position: relative;
+        bottom: 1em;
+        right: 2.5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        
+    }
+    .longdiv{
+        width: 100%;
+        position: relative;
+        left: 1px;
+       
+    }
+    .location, .property, .max-price{
+        line-height: 40px;
+        display: flex;
+        gap: 5px;
+        font-size: 14px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .whatwedo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .buy-a-home, .rent-a-home, .sell-a-home{
+        width: 245px;
+        height: 290px;
+        box-shadow: 5px 8px 8px -7px black;
+        border-radius: 10px;
+        background-color: white;
+        /* border: 1px solid rgb(53, 94, 149); */
+    }
+    .parent-properties{
+        display: flex;
+        flex-direction: column;
+    }
+    .featured-properties-parent .featured1{
+        display: flex;
+        flex-direction: row; 
+        
+    }
+    .whatwedo-container{
+        flex-direction: column;
+        gap: 30px;
+     
+    }
+}
+
+@media screen and (max-width: 520px){
+    body{
+        /* width: 100vw; */
+    }
+    nav{
+        height: 10vw;
+        display: none;
+
+    }
+    /* nav ul li{
+        display: none;
+    }
+    nav button{
+        display: none;
+    } */
+
+    nav label{
+       position: relative;
+       /* left: 100px; */
+       font-weight: 500;
+    }
+    nav .sign{
+       width: 60px;
+      
+    }
+    .headinfo{
+        display: flex;
+        flex-direction: column;
+        gap: 0em;
+        background: lavender;
+        width: 100vw;
+        font-size: 2.3em;
+        text-transform: capitalize;
+        background-image: url(./main.png);
+        background-repeat: no-repeat;
+        background-position:  bottom  ;
+       
+        background-size: 12em;
+        /* align-items: center; */
+        height: 80vh;
+     position: relative;
+        bottom: 8rem;
+        gap: 6rem;
+        right: 1rem;
+        
+    }
+    
+    header h2{
+        width: 76%;
+        font-size: 2.5rem;
+        position: relative;
+    bottom: 0.7em;
+        left: 1.7em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        
+    }
+    .parent-longdiv{
+
+        width: 100%;
+        position: relative;
+        left: 1px;
+    }
+    .longdiv{
+        width: 75%;
+        position: relative;
+        left: 1px;
+        font-size: 0.6em;
+        gap: 0.1rem;
+        display: none;
+       
+    }
+ 
+    .bi-chevron-down{
+        border-right: none;
+        /* padding-right: 2.5rem; */
+        
+    }
+  
+    .search-button{
+        width: 5em;
+        height: 2em;
+        background-color: rgb(53, 94, 149);
+        border: none;
+        border-radius: 40px;
+    }
+    .search-button span{
+        color: white;
+        font-size: 1em;
+    }
+    .search-button:hover{
+        background-color: wheat;
+    }
+    .longdiv .search-button{
+        font-size: 1.5em;
+    }
+    .location, .property, .max-price{
+        line-height: 40px;
+        display: flex;
+        gap: 5px;
+        font-size: 1.5em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .whatwedo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .buy-a-home, .rent-a-home, .sell-a-home{
+        width: 245px;
+        height: 290px;
+        box-shadow: 5px 8px 8px -7px black;
+        border-radius: 10px;
+        background-color: white;
+        /* border: 1px solid rgb(53, 94, 149); */
+    }
+    .parent-properties{
+        display: flex;
+        flex-direction: column;
+        gap: 7em;
+        
+    }
+    /* .featured-properties-parent .featured1{
+        display: flex;
+        flex-direction: row; 
+        
+    } */
+    .whatwedo-container{
+        width: 100%;
+        flex-direction: column;
+        gap: 2em;
+     
+    }
+    .featured-properties{
+        display: none;
+    }
+    .properties-seeall{
+        display: none;
+    }
+    
+    
+    .parent-blog{
+        flex-direction: column;
+    }
+    .parent-testimonials{
+        flex-direction: column;
+    }
+    footer{
+        width: 100%;
+    }
+    
+}
+
+
