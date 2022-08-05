@@ -1,10 +1,27 @@
 html, body{
     overflow-x: hidden;
 }
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    height: 8vh;
+}
+label{
+    font-size: 2.2rem;
+    position: relative;
+   line-height: 3.5rem;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    
+   
+}
+label span{
+    color: rgb(53, 94, 149);
+}
 header{
-    background: lavender;
+    background: rgb(244, 244, 255);
     text-transform: capitalize;
-    height: 70vh;
+    height: 60vh;
     background-position: calc(15em);
     /* gap: 6em; */
     
@@ -12,10 +29,10 @@ header{
 header h2{
     width: 70%;
     margin-bottom: 9rem;
-    font-size: 2rem;
+    font-size: 2.35rem;
     line-height: 1.3em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* position: absolute; */
+    position: absolute;
     inset: 0;
     margin: auto;
 
@@ -25,14 +42,449 @@ header span{
     color:rgb(53, 94, 149);
 }
 header div img{
-    width: 17rem;
-    /* position: absolute; */
-    inset: 0;
+    width: 19rem;
+    position: absolute;
+     inset: 0;
     margin: auto;
+    margin-top: 8.5rem;
+    /* margin-right: 0.6rem; */
 
    
 }
 .headinfo {
     position: relative;
-    top: 6rem;
+    top: 4rem;
 }
+
+
+.whatwedo-container{
+     /* justify-content: center; */
+    /* align-items: center;  */
+    margin-top: 4rem;
+    
+   
+}
+.section1 p:first-child{
+    color: rgb(53, 94, 149);
+    text-align: center;
+    margin-top: 3rem;
+}
+.section1 h3{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.buy-a-home, .rent-a-home, .sell-a-home{
+    width: 13.5rem;
+    height: 17.9rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.buy-a-home p:nth-child(3), .rent-a-home p:nth-child(3), .sell-a-home p:nth-child(3){
+    line-height: 1.3rem;
+}
+.buy-a-home svg, .rent-a-home svg, .sell-a-home svg{
+    border: 2px solid rgb(53, 94, 149);
+    padding: 1rem;
+    border-radius: 10px;
+    fill: rgb(53, 94, 149);
+    margin-top: 1.6rem;
+   
+}
+
+
+.buy-a-home p:nth-child(2), .rent-a-home p:nth-child(2), .sell-a-home p:nth-child(2){
+    font-size: 1.25rem;
+}
+.buy-a-home .more-button, .rent-a-home .more-button, .sell-a-home .more-button{
+    width: 6rem;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid rgb(53, 94, 149);
+    border-radius: 40px;
+    color: rgb(53, 94, 149);
+    font-size: 1rem;
+}
+
+.buy-a-home .more-button:hover, .rent-a-home .more-button:hover, .sell-a-home .more-button:hover{
+    background-color: rgb(53, 94, 149);
+    color: white;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+
+
+/* .properties-seeall-button{
+    width: 105px;
+    height: 40px;
+    border:2px solid rgb(53, 94, 149);
+    border-radius: 40px;
+    background: white;
+    color: rgb(53, 94, 149);
+    font-size: 15px;
+ } */
+ 
+ .properties{
+     margin-top: 10rem;
+    
+ }
+ .properties h3{
+     font-size: 1.2rem;
+ }
+ .properties h5{
+     color: rgb(53, 94, 149);
+     font-size: 15px;
+ }
+ .properties h3, .properties h5{
+     text-align: center;
+ }
+ .properties-img{
+     border-radius: 40px 40px 0 0;
+     width: 17rem;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     
+     
+ }
+ .parent-properties div .properties-img{
+    margin-top: 4rem;
+ }
+
+ .parent-properties figcaption{
+     width: 17rem;
+     background-color: white;
+     border-radius: 0 0 40px 40px;
+     position: relative;
+     bottom: 5px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     margin: 0 auto;
+    
+ }
+ .parent-properties figcaption .owner img{
+     margin-right: 76px;
+ }
+ .parent-properties figcaption .owner span{
+     position: relative;
+     right: 5.5rem;
+     width: 100%;
+ }
+ .parent-properties figcaption:first-of-type{
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+ .buy-a-home:hover,.rent-a-home:hover, .sell-a-home:hover {
+    transform: scale(1.07);
+    transition: all .3s;
+ }
+ 
+ .name-price{
+     display: flex;
+     gap: 4rem;
+ }
+ .name-price div:nth-child(1){
+     position: relative;
+     left: 1.2rem;
+ }
+ .name-price div:nth-child(2){
+     color: rgb(53, 94, 149);
+ }
+ .property-location{
+     display: flex;
+     gap: 8px;
+     position: relative;
+     left: 1rem;
+ }
+ .property-location svg{
+     color: rgb(53, 94, 149);
+     
+ }
+ .icons3{
+     display: flex;
+     gap: 0.5rem;
+     justify-content: space-around;
+     margin-top: 20px;
+     padding-left: 0.5rem;
+ }
+ .icons3 svg{
+     fill: rgb(53, 94, 149);
+     padding: 5px;
+ }
+ .owner{
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+ }
+ .owner img{
+     border-radius: 50px;
+     position: relative;
+     left: 20px;
+     width: 4rem;
+ }
+ .owner svg{
+     position: relative;
+     right: 50px;
+ }
+ .bi-heart-fill{
+     fill: rgb(174, 174, 174);
+ }
+ 
+ .properties-seeall-button{
+    width: 6rem;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid rgb(53, 94, 149);
+    border-radius: 40px;
+    color: rgb(53, 94, 149);
+    font-size: 1rem;
+    
+ }
+ .properties-seeall{
+    text-align: center;
+    margin-top: 2rem;
+ }
+ .properties-seeall-button:hover{
+     background-color: rgb(53, 94, 149);
+     color: white;
+     cursor: pointer;
+   
+ }
+ 
+
+
+ .featured-properties{
+    margin-top: 6rem;
+ }
+
+ .featured1{
+    width: 17rem;
+    height: 16.5rem;
+    background-color: white;
+    border-radius: 40px 40px 0 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.featured1 h4{
+    color: rgb(53, 94, 149);
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 1rem;
+
+}
+.featured1 h2{
+   /* margin-left: 1.5rem; */
+   font-size: 1rem;
+   text-align: center;
+}
+.featured1 svg{
+    margin-left: 1.5rem;
+}
+.featured-3icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.featured-3icons svg{
+    fill: rgb(53, 94, 149);
+}
+.featured-owner{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+    line-height: 3rem;
+    
+}
+.featured-owner img{
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 3rem;
+    position: relative;
+    
+}
+.long-img{
+    width: 17rem;
+    height: 19.5rem;
+    border-radius: 0px 0px 40px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 4rem;
+}
+.properties-seeall-button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.parent-blog img{
+    width: 17rem;
+    border-radius: 40px 40px 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parent-blog figcaption{
+    background-color: white;
+    height: 17rem;
+    position: relative;
+    bottom: 30px;
+    border-radius: 0 0 40px 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+ 
+}
+.parent-blog h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    position: relative;
+    top: 10px;
+}
+.parent-blog figcaption p, .parent-blog figcaption h4{
+    margin-left: 30px;
+}
+.parent-blog figcaption p:nth-child(3){
+    width: 15rem;
+    color: rgb(53, 53, 53);
+    font-size: 16px;
+}
+.readmore{
+    display: flex;
+    gap: 3.5rem;
+    position: relative;
+    bottom: 15px;
+    color: rgb(53, 94, 149);
+}
+.readmore svg:hover{
+    background-color: rgb(53, 94, 149);
+    color: white;
+    border-radius: 50px;
+}
+.testimonials{
+    margin-top: 6rem;
+}
+.testimonials h5{
+    color: rgb(53, 94, 149);
+    font-size: 1rem;
+    text-align: center;
+}
+.testimonials h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.parent-testimonials{
+    
+}
+.testimonal-1{
+    width: 14.5rem;
+    height: 14.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* margin: 0 auto; */
+     display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    /* margin-bottom: 3rem; */
+
+}
+.testimonal-1:nth-child(3){
+    margin-bottom: 3rem;
+}
+.testimonials img{
+    width: 4.5rem;
+    margin-top: 1.4rem;
+    border-radius: 50%;
+}
+.testimonal-1 h3{
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 1.1rem;
+
+}
+.testimonal-1 span{
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 1.8rem;
+}
+.testimonal-1 p{
+    font-size: 0.8rem;
+    width: 10rem;
+    position: relative;
+    bottom: 3.7rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background-color:  rgb(242, 242, 242);
+    color: black;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+footer div:nth-child(2), footer div:nth-child(3), footer div:nth-child(4){
+   position: relative;
+   right: 1.3rem;
+}
+footer ul li{
+    font-size: 0.9rem;
+    list-style: none;
+    line-height: 2rem;
+}
+footer h4{
+    font-size:1.2rem ;
+    margin-left: 2rem;
+    color: rgb(43, 43, 43);
+    margin-top: 2.3rem
+}
+
+footer svg{
+    fill: black;
+    padding-left: 1.5rem;
+}
+footer svg:hover{
+    fill: lavender;
+}
+.footer-logo label{
+    /* padding-left: 1rem; */
+    padding-top: 1rem;
+    /* font-size: 1.1rem; */
+}
+.footer-logo p{
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+ @media screen and (min-width: 1008px){
+    
+    /* .featured-properties-parent{
+       display: flex;
+    }  */
+    .parent-testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    }
+    .testimonal-1{
+        margin-left: 0;
+        margin-right: 0; 
+    }
+    .testimonal-1:nth-child(3){
+        margin-bottom: 0;
+    }
+   
+    
+   
+  
+} 
