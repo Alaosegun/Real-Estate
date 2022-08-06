@@ -5,12 +5,12 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 nav{
-    height: 8vh;
+    height: 11vh;
 }
 label{
     font-size: 2.2rem;
     position: relative;
-   line-height: 3.5rem;
+   line-height: 5rem;
    padding-left: 0.7rem;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     
@@ -22,15 +22,15 @@ label span{
 header{
     background: rgb(242, 242, 242);
     text-transform: capitalize;
-    height: 60vh;
+    height: 80vh;
     background-position: calc(15em);
     /* gap: 6em; */
     
 }
 header h2{
     width: 70%;
-    margin-bottom: 9rem;
-    font-size: 2rem;
+    margin-bottom: 10rem;
+    font-size: 2.1rem;
     line-height: 1.3em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
@@ -45,16 +45,16 @@ header span{
     color:rgb(53, 94, 149);
 }
 header div img{
-    width: 19rem;
+    width: 20rem;
     position: absolute;
-    margin-top: 8.5rem;
-    margin-right: 0.4rem;
+    margin-top: 9rem;
+   right: 0.7rem;
 
    
 }
 .headinfo {
     position: relative;
-    top: 4rem;
+    top: 5rem;
 }
 
 
@@ -76,8 +76,8 @@ header div img{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .buy-a-home, .rent-a-home, .sell-a-home{
-    width: 14.9rem;
-    height: 17.9rem;
+    width: 13.9rem;
+    height: 17.5rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     background-color: white;
@@ -87,13 +87,15 @@ header div img{
 }
 .buy-a-home p:nth-child(3), .rent-a-home p:nth-child(3), .sell-a-home p:nth-child(3){
     line-height: 1.3rem;
+   font-size: 0.95rem;
+
 }
 .buy-a-home svg, .rent-a-home svg, .sell-a-home svg{
     border: 2px solid rgb(53, 94, 149);
     padding: 1rem;
     border-radius: 10px;
     fill: rgb(53, 94, 149);
-    margin-top: 1.6rem;
+    margin-top: 1.4rem;
    
 }
 
@@ -196,6 +198,8 @@ header div img{
  }
  .name-price div:nth-child(2){
      color: rgb(53, 94, 149);
+     position: relative;
+     left: 1rem;
  }
  .property-location{
      display: flex;
@@ -227,15 +231,16 @@ header div img{
  .owner img{
      border-radius: 50px;
      position: relative;
-     left: 20px;
+     left: 1.5rem;
      width: 4rem;
  }
  .owner svg{
      position: relative;
      right: 50px;
  }
- .owner span{
-   
+ .owner h6{
+    position: relative;
+    right: 5rem;
  }
  .bi-heart-fill{
      fill: rgb(174, 174, 174);
@@ -318,6 +323,11 @@ header div img{
     position: relative;
     
 }
+ .featured-owner span{
+   position: relative;
+   left: 0.3rem;
+   bottom: 0.5rem;
+} 
 .long-img{
     width: 17rem;
     height: 19.5rem;
@@ -363,7 +373,7 @@ header div img{
 .parent-blog figcaption p:nth-child(3){
     width: 15rem;
     color: rgb(53, 53, 53);
-    font-size: 16px;
+    font-size: 0.95rem;
 }
 .readmore{
     display: flex;
@@ -463,7 +473,7 @@ footer h4{
 
 footer svg{
     fill: black;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
 }
 footer svg:hover{
     fill: lavender;
