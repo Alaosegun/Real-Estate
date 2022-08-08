@@ -20,28 +20,53 @@ label{
 label span{
     color: rgb(53, 94, 149);
 }
+.sign-btn{
+    /* float: right; */
+    background-color: rgb(53, 94, 149);
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    margin-top: 0.8rem;
+    border-radius: 40px;
+    /* margin-top: 10px; */
+    position: relative;
+    right: 3.5rem;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
 nav{
     background-color: white;
-    height: 80px;
+    height: 3.3rem;
     width: 100%;
+    display: flex;
+    gap: 20rem;
+    
+}
+nav label{
+    position: relative;
+    left: 7rem;
 }
 
 nav ul{
-    float: right;
+    /* float: right; */
    margin: 20px;
 }
 nav ul li{
     display: inline-block;
     /* line-height: 80px; */
-    margin: 0 5px;
+    /* margin: 0 5px; */
 }
 nav ul li a{
+    color: white;
     text-decoration: none;
     color: black;
-    font-size: 1rem;
-    padding: 7px 13px;
+    font-size: 1.2rem;
+    padding: 1.3rem;
     border-radius: 3px;
-    text-transform: uppercase;
+    
 
 }
 a.active,a:hover{
@@ -62,21 +87,26 @@ a.active,a:hover{
 header{
     background: rgb(242, 242, 242);
     text-transform: capitalize;
-    height: 80vh;
-    background-position: calc(15em);
+    height: 85vh;
+    background-size: 20rem;
+    /* margin-top: 2rem; */
+   
     /* gap: 6em; */
     
 }
 header h2{
     width: 70%;
-    margin-bottom: 10rem;
+    padding-top: 9rem;
     font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 1.3em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    left: 2rem;
+    /* position: absolute; */
+    /* inset: 0; */
+    /* top: 9rem; */
+    /* margin: auto; */
+    /* left: 2rem; */
    
 
     
@@ -86,18 +116,20 @@ header span{
 }
 header div img{
     width: 20rem;
-    position: absolute;
-    margin-top: 9rem;
-   right: 0.7rem;
-
+    
+    /* position: absolute; */
+    /* margin-top: 2rem; */
+  
    
 }
-.headinfo {
-    position: relative;
-    top: 9rem;
+ .headinfo {
+    /* position: relative; */
+    /* top: 9rem; */
+
+
   
     
-}
+} 
 
 
 .whatwedo-container{
@@ -205,7 +237,7 @@ header div img{
      width: 17rem;
      background-color: white;
      border-radius: 0 0 40px 40px;
-     position: relative;
+     /* position: relative; */
      bottom: 5px;
      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      margin: 0 auto;
@@ -537,6 +569,14 @@ footer svg:hover{
     nav ul li a{
         font-size: 10px;
     }
+    nav{
+        display: inline-block;
+        
+    }
+    nav label{
+        position: relative;
+        left: 0;
+    }
 
 }
 @media (max-width:858px){
@@ -545,28 +585,34 @@ footer svg:hover{
         color: rgb(53, 94, 149);
     }
     nav{
-        position: fixed;
+ 
         background: white;
 
     }
+    .sign-btn{
+        display: none;
+    }
    nav ul{
         position: fixed;
-        width: 100%;
+        width: 90%;
         height: 100vh;
-        background: #2c2c2c;
+        background: rgb(9, 48, 97);
         top: 80px;
         left: 100%;
         text-align: center;
-        color: red;
         transition: all .5s;
+        margin-right: auto;
+        margin-left: auto;
     }
     nav ul li{
         display: block;
         margin: 50px 0;
+       
         line-height: 30px;
     }
     nav ul li a{
         font-size: 20px;
+        color: white;
     }
     a:hover,a.active{
         background: none;
@@ -582,6 +628,12 @@ footer svg:hover{
     /* .featured-properties-parent{
        display: flex;
     }  */
+    .headinfo{
+        display: flex;
+        gap: 10rem;
+        justify-content: center;
+        align-items: center;
+    }
     .parent-testimonials{
     display: flex;
     justify-content: center;
