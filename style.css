@@ -78,6 +78,8 @@ a.active,a:hover{
     color: white;
     float: right;
     margin-right: 40px;
+    position: relative;
+    left: 1.5rem;
     cursor: pointer;
     display: none;
 }
@@ -96,7 +98,7 @@ header{
 }
 header h2{
     width: 70%;
-    padding-top: 9rem;
+    padding-top: 5rem;
     font-size: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -115,7 +117,9 @@ header span{
     color:rgb(53, 94, 149);
 }
 header div img{
-    width: 20rem;
+    width: 19.2rem;
+    
+
     
     /* position: absolute; */
     /* margin-top: 2rem; */
@@ -125,6 +129,7 @@ header div img{
  .headinfo {
     /* position: relative; */
     /* top: 9rem; */
+  
 
 
   
@@ -603,12 +608,15 @@ footer svg:hover{
         transition: all .5s;
         margin-right: auto;
         margin-left: auto;
+    
     }
     nav ul li{
         display: block;
         margin: 50px 0;
-       
+        right: 1rem;
+        position: relative;
         line-height: 30px;
+        text-transform: uppercase;
     }
     nav ul li a{
         font-size: 20px;
@@ -616,7 +624,7 @@ footer svg:hover{
     }
     a:hover,a.active{
         background: none;
-        color: saddlebrown;
+        color: gray;
     }
     #check:checked~ ul{
         left: 0;
