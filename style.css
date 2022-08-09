@@ -251,13 +251,18 @@ header div img{
      margin: 0 auto;
     
  }
+
  .parent-properties figcaption .owner img{
-     margin-right: 76px;
+     position: relative;
+     right: 6rem;
  }
  .parent-properties figcaption .owner span{
      position: relative;
      right: 5.5rem;
      width: 100%;
+     color: red;
+    
+  
  }
  .parent-properties figcaption:first-of-type{
      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -313,8 +318,9 @@ header div img{
  .owner img{
      border-radius: 50px;
      position: relative;
-     left: 1.5rem;
+     left: 0.01rem;
      width: 4rem;
+     
  }
  .owner svg{
      position: relative;
@@ -322,7 +328,7 @@ header div img{
  }
  .owner h6{
     position: relative;
-    right: 5rem;
+    right: 3rem;
  }
  .bi-heart-fill{
      fill: rgb(174, 174, 174);
@@ -382,6 +388,10 @@ header div img{
 .featured1 svg{
     margin-left: 1.5rem;
 }
+.featured-properties .bi-heart-fill{
+    position: relative;
+    left: 2rem;
+}
 .featured-3icons{
     display: flex;
     gap: 10px;
@@ -404,6 +414,9 @@ header div img{
     width: 3rem;
     position: relative;
     
+}
+.owner-im1{
+    display: none;
 }
  .featured-owner span{
    position: relative;
@@ -436,7 +449,7 @@ header div img{
 }
 .parent-blog figcaption{
     background-color: white;
-    height: 17rem;
+    height: 16rem;
     position: relative;
     bottom: 30px;
     border-radius: 0 0 40px 40px;
@@ -484,9 +497,7 @@ header div img{
     font-size: 1.5rem;
     text-align: center;
 }
-.parent-testimonials{
-    
-}
+
 .testimonal-1{
     width: 14.5rem;
     height: 14.5rem;
@@ -608,7 +619,7 @@ footer svg:hover{
         width: 90%;
         height: 100vh;
         background: rgb(9, 48, 97);
-        top: 3.6rem;
+        top: 2.8rem;
         left: 100%;
         text-align: center;
         transition: all .5s;
