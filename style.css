@@ -74,7 +74,7 @@ nav ul li a{
     
 
 }
-a.active,a:hover{
+nav a.active,nav a:hover{
     background: rgb(53, 94, 149);
     transition: .5s;
     color: white;
@@ -578,8 +578,12 @@ footer svg{
     fill: black;
     padding-left: 1.9rem;
 }
+footer a{
+    text-decoration: none;
+}
 footer svg:hover{
-    fill: lavender;
+    /* fill: lavender; */
+    background-color: none;
 }
 .footer-logo label{
     /* padding-left: 1rem; */
