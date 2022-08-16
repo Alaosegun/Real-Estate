@@ -8,6 +8,7 @@ body{
 }
 
 
+
 label{
     font-size: 2rem;
     position: relative;
@@ -43,7 +44,7 @@ nav{
     width: 100%;
     display: flex;
     gap: 20rem;
-    position: relative;
+    /* position: relative; */
     z-index: 1;
     /* bottom: 36.5rem; */
     
@@ -74,8 +75,9 @@ nav ul li a{
 
 }
 a.active,a:hover{
-    background: orange;
+    background: rgb(53, 94, 149);
     transition: .5s;
+    color: white;
 }
 .checkbtn{
     font-size: 30px;
@@ -138,7 +140,9 @@ header div img{
   
     
 } 
-
+.longdiv{
+    display: none;
+}
 
 .whatwedo-container{
      /* justify-content: center; */
@@ -202,18 +206,6 @@ header div img{
     cursor: pointer;
 }
 
-
-
-/* .properties-seeall-button{
-    width: 105px;
-    height: 40px;
-    border:2px solid rgb(53, 94, 149);
-    border-radius: 40px;
-    background: white;
-    color: rgb(53, 94, 149);
-    font-size: 15px;
- } */
- 
  .properties{
      margin-top: 10rem;
     
@@ -240,6 +232,24 @@ header div img{
  .parent-properties div .properties-img{
     margin-top: 4rem;
  }
+ .latest-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+ }
+ .latest-container img{
+    width: 17rem;
+    border-radius: 40px 40px 0px 0px;
+ }
+.property-flex{
+    width: 17rem;
+    /* height: 10rem; */
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0 0 40px 40px;
+
+}
 
  .parent-properties figcaption{
      width: 17rem;
@@ -649,16 +659,200 @@ footer svg:hover{
 
 }
  @media screen and (min-width: 1008px){
+    header h2{
+        width: 60%;
+        font-size: 3.5rem;
+        line-height: 1.3em;
+        position: relative;
+        bottom: 4.3rem;
+        left: 1.5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
     
-    /* .featured-properties-parent{
-       display: flex;
-    }  */
-    .headinfo{
+        
+    }
+    header span{
+        color:rgb(53, 94, 149);
+    }
+    header div img{
+        width: 95%;
+       position: relative;
+       right: 5rem;
+      
+       
+    }
+     .headinfo {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      
+        
+    } 
+    label{
+        font-size: 2.3rem;
+        position: relative;
+       line-height: 4rem;
+       padding-left: 3rem;
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        
+       
+    }
+    nav{
+
+        /* height: 0px; */
+        width: 100%;
         display: flex;
-        gap: 10rem;
+        gap: 18rem;
+        position: relative;
+        z-index: 1;
+        position: fixed;
+        background-color: rgb(249, 249, 252);
+        /* bottom: 36.5rem; */
+        height: 4.5rem;
+        
+    }
+    .parent-longdiv{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .longdiv{
+        width: 70rem;
+        height: 75px;
+        background-color: white;
+        position: relative;
+        bottom: 30px;
+        display: flex;
+        box-sizing: border-box;
+        line-height: 70px;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
+    }
+    
+    .location, .property, .max-price{
+        line-height: 40px;
+        display: flex;
+        gap: 1rem;
+        font-size: 1.1rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      
+    }
+    
+    .location p:nth-child(1), .property p:nth-child(1), .max-price p:nth-child(1) {
+        color: rgb(53, 94, 149);
+       
+    }
+    .bi-chevron-down{
+        border-right: 1px solid rgb(35, 35, 35);
+        padding-right: 2.5rem;
+        
+    }
+    .search-button{
+        width: 6.6rem;
+        height: 2.7rem;
+        background-color: rgb(53, 94, 149);
+        border: none;
+        border-radius: 40px;
+        color: white;
+        font-size: 1rem;
+        color: white;
+    }
+    .search-button:hover{
+        background-color: white;
+        color: rgb(53, 94, 149);
+        border: 2px solid rgb(53, 94, 149);
+    }
+    .section1{
+        margin-top: 10rem;
+    }
+    .whatwedo-container{
+        display: flex;
+        gap: 3rem;
         justify-content: center;
         align-items: center;
     }
+    .buy-a-home, .rent-a-home, .sell-a-home{
+        width: 13.9rem;
+        height: 18.5rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        background-color: white;
+        text-align: center;
+        margin: 0 ;
+        margin-top: 2rem;
+    }
+    .buy-a-home svg, .rent-a-home svg, .sell-a-home svg{
+        position: relative;
+        bottom: 3rem;
+        
+    }
+    .buy-a-home p:nth-child(2), .rent-a-home p:nth-child(2), .sell-a-home p:nth-child(2){
+        font-size: 1.25rem;
+        position: relative;
+        bottom: 2.5rem;
+    }
+    .buy-a-home .more-button, .rent-a-home .more-button, .sell-a-home .more-button{
+        width: 6rem;
+        padding: 8px;
+        background-color: white;
+        border: 2px solid rgb(53, 94, 149);
+        border-radius: 40px;
+        color: rgb(53, 94, 149);
+        font-size: 1rem;
+        position: relative;
+        bottom: 2rem;
+    }
+    .buy-a-home p:nth-child(3), .rent-a-home p:nth-child(3), .sell-a-home p:nth-child(3){
+        line-height: 1.3rem;
+       font-size: 1rem;
+       position: relative;
+       bottom: 2.5rem;
+    }
+    .section1 p:first-child{
+        color: rgb(53, 94, 149);
+        text-align: center;
+        /* margin-top: 3rem; */
+        font-size: 1.3rem;
+    }
+    .section1 h3{
+        font-size: 1.8rem;
+
+    }
+    .properties-img{
+        border-radius: 40px 40px 0 0;
+        width: 17rem;
+        /* display: block; */
+        margin-left: 0;
+        margin-right: 0;
+        
+        
+    }
+    .parent-properties div .properties-img{
+       margin-top: 4rem;
+    }
+   
+    .parent-properties figcaption{
+        width: 17rem;
+        background-color: white;
+        border-radius: 0 0 40px 40px;
+        /* position: relative; */
+        bottom: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: 0;
+       
+       
+    }
+.latest-flex{
+    background-color: red;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
+
     .parent-testimonials{
     display: flex;
     justify-content: center;
@@ -673,7 +867,7 @@ footer svg:hover{
     .testimonal-1:nth-child(3){
         margin-bottom: 0;
     }
-   
+  
     
    
   
