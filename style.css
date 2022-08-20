@@ -105,7 +105,7 @@ header{
 header h2{
     width: 70%;
     padding-top: 3.5rem;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.3em;
@@ -134,7 +134,7 @@ header div img{
 }
  .headinfo {
    position: relative;
-   top: 5rem;
+   top: 4rem;
 
 
   
